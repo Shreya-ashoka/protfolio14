@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection'
 import ProjectsSection from './components/ProjectsSection'
 import InternshipSection from './components/InternshipSection'
 import AchievementsSection from './components/AchievementsSection'
+import CertificationSection from './components/CertificationSection'
 import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
       <ProjectsSection/>
       <InternshipSection/>
       <AchievementsSection/>
+      <CertificationSection />
       <Footer/>
     </main>
   )

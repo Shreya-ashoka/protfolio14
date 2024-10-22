@@ -1,18 +1,18 @@
-"use client" // This is a client-side component
-import React, { useState } from "react"
-import { Link } from "react-scroll/modules" // For smooth scrolling navigation
-import { usePathname } from "next/navigation" // To handle active paths
-import { useTheme } from "next-themes" // For theme switching between light and dark mode
-import { RiMoonFill, RiSunLine } from "react-icons/ri" // Icons for theme switch
-import { IoMdMenu, IoMdClose } from "react-icons/io" // Icons for menu open/close
+"use client"; // This is a client-side component
+import React, { useState } from "react";
+import { Link } from "react-scroll/modules"; // For smooth scrolling navigation
+import { usePathname } from "next/navigation"; // To handle active paths
+import { useTheme } from "next-themes"; // For theme switching between light and dark mode
+import { RiMoonFill, RiSunLine } from "react-icons/ri"; // Icons for theme switch
+import { IoMdMenu, IoMdClose } from "react-icons/io"; // Icons for menu open/close
 
 // Define the navigation items
 interface NavItem {
-  label: string
-  page: string
+  label: string;
+  page: string;
 }
 
-// Navigation items array including Internship
+// Navigation items array including Internship and Certification Section
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Home",
@@ -27,20 +27,24 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "projects",
   },
   {
-    label: "Internship", // Added Internship navigation item
-    page: "internship", // Page identifier for Internship section
+    label: "Internship", 
+    page: "internship", 
   },
   {
     label: "Achievement",
     page: "achievement"
   },
-]
+  {
+    label: "Certifications",
+    page: "certifications"
+  },
+];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme() 
-  const currentTheme = theme === "system" ? systemTheme : theme 
-  const pathname = usePathname() 
-  const [navbar, setNavbar] = useState(false) 
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  const pathname = usePathname();
+  const [navbar, setNavbar] = useState(false);
 
   return (
     <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
@@ -49,7 +53,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Shreya Ashoka</h2> 
+                <h2 className="text-2xl font-bold">Shreya Ashoka</h2> {/* Name/Logo */}
               </div>
             </Link>
             <div className="md:hidden">
@@ -78,28 +82,29 @@ export default function Navbar() {
                     className={
                       "block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
                     }
-                    activeClass="active" 
-                    spy={true} 
-                    smooth={true} 
-                    offset={-100} 
-                    duration={500} 
-                    onClick={() => setNavbar(!navbar)} 
+                    activeClass="active" // Active class to highlight the current section
+                    spy={true} // To make it active when scrolling
+                    smooth={true} // Smooth scroll
+                    offset={-100} // Adjusting the scroll position
+                    duration={500} // Duration of the scroll effect
+                    onClick={() => setNavbar(!navbar)} // Close the menu on click (mobile)
                   >
-                    {item.label} 
+                    {item.label} {/* Display the label */}
                   </Link>
-                )
+                );
               })}
 
+              {/* Theme switcher */}
               {currentTheme === "dark" ? (
                 <button
-                  onClick={() => setTheme("light")} 
+                  onClick={() => setTheme("light")} // Switch to light theme
                   className="bg-slate-100 p-2 rounded-xl"
                 >
                   <RiSunLine size={25} color="black" />
                 </button>
               ) : (
                 <button
-                  onClick={() => setTheme("dark")} 
+                  onClick={() => setTheme("dark")} // Switch to dark theme
                   className="bg-slate-100 p-2 rounded-xl"
                 >
                   <RiMoonFill size={25} />
@@ -110,5 +115,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }
