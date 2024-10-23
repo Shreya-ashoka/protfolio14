@@ -61,10 +61,10 @@ const CertificationSection = () => {
           <h2 className="text-2xl font-semibold text-violet-500">
             {certification.title}
           </h2>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-900 dark:text-gray-400">
             {certification.provider}
           </p>
-          <p className="mt-2 text-lg text-gray-200">
+          <p className="mt-2 text-lg text-gray-700 dark:text-gray-200 ">
             {certification.description}
           </p>
         </div>
