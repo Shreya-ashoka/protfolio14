@@ -12,11 +12,11 @@ const HeroSection = () => {
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Shreya Ashoka!</h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
+            I&#39;m specializing in{" "}
             <span className="font-semibold text-violet-500">
-              currently in final year{" "}
+              Artificial Intelligence and Machine Learning{" "}
             </span>
-            at Global Academy of Technology, majoring in Artificial Intelligence and Machine Learning, working towards creating software that makes life easier and more meaningful.
+            with experience in developing intelligent systems and full-stack web applications. My work includes using technologies such as Python, React, LangChain, and various machine learning frameworks to build scalable and efficient solutions. I focus on delivering clean, functional, and well-structured code for real-world applications.
           </p>
           <div className="md:mt-2 md:w-1/2">
           <Image

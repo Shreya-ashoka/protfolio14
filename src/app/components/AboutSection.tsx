@@ -3,20 +3,44 @@ import Image from "next/image"
 
 
 const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
+{ skill: "Python" },
+  { skill: "C/C++" },
+  { skill: "Java" },
   { skill: "JavaScript" },
   { skill: "TypeScript" },
-  { skill: "next JS" },
-  { skill: "Python" },
-  { skill: "Java" },
-  { skill: "React" },
+  { skill: "SQL" },
+  { skill: "HTML" },
+  { skill: "CSS" },
+  { skill: "React.js" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
-  { skill: "Git/GitHub" },
+  { skill: "MySQL" },
+  { skill: "MongoDB" },
+  { skill: "Git" },
+  { skill: "Pandas" },
+  { skill: "NumPy" },
+  { skill: "Tableau" },
+  { skill: "Power BI" },
+  { skill: "Microsoft Office" },
   { skill: "Jupyter Notebooks" },
+  { skill: "LangChain" },
+  { skill: "Streamlit" },
+  { skill: "Elasticsearch" },
+  { skill: "pdfplumber" },
+  { skill: "docx" },
+  { skill: "NLTK" },
+  { skill: "TextBlob" },
+  { skill: "Large Language Models (LLMs)" },
+  { skill: "OpenAI API" },
+  { skill: "Prompt Engineering" },
+  { skill: "Document Chunking" },
+  { skill: "Data Analysis" },
+  { skill: "Data Visualization" },
+  { skill: "Machine Learning" },
+  { skill: "Deep Learning" },
+  { skill: "Natural Language Processing (NLP)" },
+  { skill: "Computer Vision" },
 ]
-
 const AboutSection = () => {
   return (
     <section id="about">
@@ -32,7 +56,7 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              I'm Shreya, currently in my final year and based in Bangalore, India. I'm passionate about developing innovative software that simplifies life and creates meaningful connections. With a strong foundation in <span className="font-bold">AI, machine learning, and design</span>, I focus on building solutions that solve real-world problems. I love collaborating with diverse teams and continuously exploring new ways technology can shape the future.
+              I'm Shreya, fresher and based in Bangalore, India. I'm passionate about developing innovative software that simplifies life and creates meaningful connections. With a strong foundation in <span className="font-bold">AI, machine learning, and design</span>, I focus on building solutions that solve real-world problems. I love collaborating with diverse teams and continuously exploring new ways technology can shape the future.
             </p>
             <br />
             <p>

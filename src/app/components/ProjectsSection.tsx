@@ -4,10 +4,10 @@ import Link from "next/link"
 
 const projects = [
   {
-    name: "Hand-Gesture-Recognition",
-    brief: "Gesture-controlled web navigation system.",
-    description: "Developed a system that opens a website using specific hand gestures by employing Python, OpenCV for image processing, and Mediapipe for tracking hand movements. The result was a successful recognition of gestures with high accuracy, allowing users to interact with web content seamlessly through hand gestures.",
-    image: "/HGR1.png",
+  name: "AI-Driven Legal Assistant and Judicial Support System",
+  brief: "Automated legal query handling and document analysis.",
+  description: "Developed a legal assistant system that automates query resolution, document generation, and metadata extraction using Python, Streamlit, LangChain, Groq LLM, and Elasticsearch. Implemented multilingual chatbot functionality and legal document classification to improve access to legal resources and reduce manual workload.",
+  image: "/legalassistant.png",
   },
   {
     name: "Music-Melody Analysis System",
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
                 src={project.image}
                 alt={project.name}
                 width={500}
-                height={500}
+                height={800}
                 className="rounded-xl shadow-xl"
               />
             </div>

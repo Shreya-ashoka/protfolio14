@@ -7,7 +7,12 @@ const internships = [
     duration: "December 2022 - January 2023",
     description: "As an intern, I contributed to various research projects by leveraging Microsoft Office Suite for comprehensive data analysis and reporting. My role involved gathering and analyzing data, creating detailed reports, and supporting research initiatives. This experience enhanced my skills in data-driven decision-making, organization, and communication.",
   },
-  
+  {
+  "title": "Frontend Developer Intern",
+  "company": "FreshMind Technologies Pvt. Ltd.",
+  "duration": "Oct 2024 – Jan 2025",
+  "description": "Worked on building and deploying responsive frontend components using Next.js, TypeScript, and Tailwind CSS. Used Git for version control and deployed projects via Vercel. Gained practical experience in scalable UI architecture, version control workflows, and modern web development practices."
+},
   {
     title: "Accenture North America Data Analytics and Visualization Job Simulation",
     company: "Forage",
